@@ -4,20 +4,21 @@
 /**
  * print_array - Prints an array of integers.....
  *
- * @array: The array to be printed....
- * @size: Number of elements in @array....
+ * @array: The array to be printed.....
+ * @size: Number of elements in @array...
  */
 void print_array(const int *array, size_t size)
 {
-	size_t i;
+	size_t w;
 
-	i = 0;
-	while (array && i < size)
+	w = 0;
+	while (array && w < size)
 	{
-		if (i > 0)
+		if (w > 0)
 			printf(", ");
-		printf("%d", array[i]);
-		++i;
+		printf("%d", array[w]);
+		++w;
 	}
 	printf("\n");
 }
+
